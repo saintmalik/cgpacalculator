@@ -1,0 +1,12 @@
+payable contract CGPACalculator =
+    record usersInput = 
+        { usersAddress      :address,
+          courseUnit        :string,
+          courseScore       :string
+        }
+    record state = 
+        { usersInput: map(address,usersInput),
+          owner: address }
+    stateful entrypoint init() =
+        { usersInput = {},
+          owner = ak_pN9oZbyasHxR8m6fx3aX7iqa3LqGjESRTsKpQvmuYKseqirxL  }
