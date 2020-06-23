@@ -117,7 +117,7 @@ function getPointsMark(courseScore)
     if(courseScore < 40){
         return 0*courseUnit;
     } 
-  }
+  };
 
   
 
